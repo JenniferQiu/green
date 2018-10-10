@@ -1,0 +1,12 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+header{width:100%;height:75px;}
+div.wrap>header>.container{width:80%;height:100%;}
+div.wrap>header>.container>.logo{line-height: 75px;display: inline-block;float: left;}
+div.wrap>header>.container>.logo>.link-logo{line-height: 75px;display: inline-block;vertical-align: middle;}
+div.wrap>header>.container>.logo>.link-logo>.logo-img{display:block;max-width:100%;height:auto;}
+div.wrap>header>.container>.menu{float:right;}
+div.wrap>header>.container>.menu>.navbar-nav{float: left;margin: 0;}
+div.wrap>header>.container>.menu>.navbar-nav>.menu-item{float: left;}
+div.wrap>header>.container>.menu>.navbar-nav>.menu-item>a{padding: 0 20px;line-height:75px;color:#125f06;display:block;position: relative;}

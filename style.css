@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Fredericka the Great';
+  src: url('FrederickatheGreat-Regular.ttf');
+}
+div.wrap > nav {
+  width: 100%;
+  background: #fff;
+}
+div.wrap > nav > .container {
+  width: 80%;
+}
+div.wrap > nav > .container > .logo {
+  line-height: 75px;
+  display: inline-block;
+  float: left;
+}
+div.wrap > nav > .container > .menu > .navbar-nav > .menu-item > a {
+  padding: 0 20px;
+  line-height: 75px;
+  color: #125f06;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+div.wrap > nav > .container > .menu > .navbar-nav > .menu-item > a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: #125f06;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.wrap > nav > .container > .menu > .navbar-nav > .menu-item > a:hover::before {
+  width: 40px;
+  transition: all 0.4s ease;
+}
+div.wrap > nav > .container > .menu-moblie {
+  width: 100%;
+  height: 75px;
+  position: relative;
+}
+div.wrap > nav > .container > .menu-moblie > .icons-hamburger > span {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 20px 0;
+  color: #125f06;
+}
+div.wrap > nav > .container > .menu-moblie > ul {
+  width: 50%;
+  z-index: 9998;
+  transition: all 0.5s;
+  position: absolute;
+  left: -500px;
+  top: 0;
+}
+div.wrap > nav > .container > .menu-moblie > ul > li {
+  width: 100%;
+  height: 50px;
+  background: green;
+}
+div.wrap > nav > .container > .menu-moblie > ul > li > a {
+  color: white;
+  line-height: 50px;
+  text-decoration: none;
+}
+div.wrap > .main-content > .slider-banner {
+  position: relative;
+}
+div.wrap > .main-content > .slider-banner > .carousel > .left {
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+div.wrap > .main-content > .slider-banner > .carousel > .right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+div.wrap > .main-content > .slider-banner > .carousel .carousel-caption {
+  margin: 250px auto;
+}
+div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h2 {
+  font-size: 4em;
+  color: #fff;
+  font-family: 'Fredericka the Great', cursive;
+}
+div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h3 {
+  font-size: 3em;
+  color: #fff;
+  font-family: 'Fredericka the Great', cursive;
+}
+div.wrap > .main-content > .slider-banner > .carousel::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-image: url(images/bg-home-banner-border.png);
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+div.wrap > .main-content {
+  overflow: hidden;
+}
+div.wrap > .main-content > .content-home {
+  margin: 100px auto;
+}
+div.wrap > .main-content > .content-home > .container-fluid .text {
+  margin: 150px auto;
+}
+div.wrap > .main-content > .content-home > .container-fluid .title-small-bg-img {
+  font-family: 'Fredericka the Great', cursive;
+  color: #125f06;
+  z-index: 1;
+  text-align: center;
+}
+div.wrap > .main-content > .content-home > .container-fluid .text-success {
+  color: #3c763d;
+  line-height: 40px;
+}
+div.wrap > .main-content > .content-home > .container-fluid .title-small-glamorous {
+  font-family: 'Fredericka the Great', cursive;
+  color: #125f06;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous {
+  margin: 50px auto;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-img-glamorous {
+  display: inline-block;
+  position: relative;
+  bottom: 0;
+  transition: all .4s ease;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-img-glamorous::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #125f06;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1, 0);
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .title-small-glamorous {
+  margin: 50px auto;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-main-glamorous .col-md-4 {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 70px;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-main-glamorous .col-md-4:hover > .wrapper-img-glamorous {
+  bottom: 20px;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-main-glamorous .col-md-4:hover .wrapper-img-glamorous::before {
+  opacity: 0.5;
+  transform: scale(1, 1);
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-main-glamorous .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+div.wrap > .main-content > .content-home > .container-fluid .wrapper-glamorous .wrapper-main-glamorous a {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #125f06;
+  margin-bottom: 10px;
+  display: block;
+}
+div.wrap > .main-content > .product {
+  margin: 100px auto;
+  position: relative;
+  background-image: url(images/bg-product.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 180px;
+  margin-bottom: 80px;
+}
+div.wrap > .main-content > .product::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/bg-product-top.png);
+}
+div.wrap > .main-content > .product::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/bg-product-bottom.png);
+}
+div.wrap > .main-content > .product > .container-fluid .title-small-bg-img {
+  font-family: 'Fredericka the Great', cursive;
+  color: #125f06;
+  z-index: 1;
+  text-align: center;
+}
+div.wrap > .main-content > .product > .container-fluid .row {
+  background: #fff;
+  box-shadow: 0 5px 5px #c2c2c2;
+}
+div.wrap > .main-content > .product > .container-fluid .text {
+  margin: 150px auto;
+}
+div.wrap > .main-content > .product > .container-fluid .text-success {
+  color: #3c763d;
+  line-height: 40px;
+}
+div.wrap > .main-content > .product .wrapper-slider-product {
+  margin: 100px auto;
+}
+div.wrap > .main-content > .product > .container-fluid .wrapper-slider-product .title-small-bg-img {
+  font-family: 'Fredericka the Great', cursive;
+  color: #fff;
+  margin-bottom: 80px;
+}
+div.wrap > .main-content > .product > .container-fluid .left {
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+div.wrap > .main-content > .product > .container-fluid .right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+div.wrap > .main-content > .product > .container-fluid .wrapper-slider-product .img-responsive {
+  border: 10px solid #fff;
+}
+div.wrap > .main-content > .special > .container-fluid .text {
+  margin: 100px auto;
+  line-height: 30px;
+  box-shadow: 0 5px 5px #c2c2c2;
+}
+div.wrap > .main-content > .special > .container-fluid .money-tea {
+  font-size: 24px;
+  margin-top: 50px;
+}
+div.wrap > .main-content > .special > .container-fluid .title-small-bg-img {
+  font-family: 'Fredericka the Great', cursive;
+  color: #125f06;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+div.wrap > .main-content > .weekend {
+  background-image: url(images/bg-weekend.jpg);
+  padding: 150px 0;
+  background-attachment: fixed;
+  position: relative;
+}
+div.wrap > .main-content > .weekend::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 170px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/bg-product-top.png);
+}
+div.wrap > .main-content > .weekend::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 170px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/bg-product-bottom.png);
+}
+div.wrap > .main-content > .weekend > .container .section-weekend {
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 100px 70px;
+  background-color: #fff;
+}
+div.wrap > .main-content > .weekend > .container .section-weekend .title-small-weekend {
+  font-size: 30px;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+}
+div.wrap > .main-content > .weekend > .container .section-weekend .title-weekend {
+  font-size: 36px;
+  color: #125f06;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+div.wrap > .main-content > .weekend > .container .section-weekend .text-weekend {
+  color: #464646;
+  margin-bottom: 40px;
+}
+div.wrap > .main-content > .weekend > .container .section-weekend .btn-gogreen {
+  text-transform: uppercase;
+  color: #125f06;
+  border: 1px dashed #125f06;
+  padding: 7px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease;
+  z-index: 100;
+}
+div.wrap > .main-content > .weekend > .container .section-weekend .btn-gogreen:hover {
+  background: #125f06;
+  color: #fff;
+}
+div.wrap > .main-content > .events > .container .links-img-success {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+div.wrap > .main-content > .events > .container .title-small-bg-img {
+  font-family: 'Fredericka the Great', cursive;
+  color: #125f06;
+  margin-bottom: 80px;
+  text-align: center;
+  margin: 80px auto;
+}
+div.wrap > .main-content > .events > .container .title-events {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 18px;
+  color: #125f06;
+  font-weight: 600;
+  margin: 30px auto;
+}
+div.wrap > .main-content > .events > .container .date-events {
+  color: #898989;
+  margin-bottom: 15px;
+}
+div.wrap > .main-content > .events > .container .text-events {
+  color: #898989;
+  margin-bottom: 0;
+}
+div.wrap > footer {
+  margin: 100px auto;
+  margin-bottom: 0;
+}
+div.wrap > footer .wrapper-footer {
+  position: relative;
+  padding: 80px 0;
+}
+div.wrap > footer .wrapper-footer .container {
+  width: 75%;
+}
+div.wrap > footer .wrapper-footer .container .wrapper-logo-footer {
+  text-align: center;
+  margin-bottom: 80px;
+}
+div.wrap > footer .wrapper-footer .container .links-logo-footer img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+div.wrap > footer .wrapper-footer .container .text-left {
+  margin-bottom: 50px;
+  text-align: left;
+  line-height: 24px;
+  font-size: 16px;
+  color: #474747;
+}
+div.wrap > footer .wrapper-footer .container .list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+div.wrap > footer .wrapper-footer .container .links-social {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  background-color: #125f06;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+div.wrap > footer .wrapper-footer .container .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+div.wrap > footer .wrapper-footer .container .fa-facebook::before {
+  content: '\f09a';
+  box-sizing: border-box;
+}
+div.wrap > footer .wrapper-footer .container .fa-twitter::before {
+  content: "\f099";
+}
+div.wrap > footer .wrapper-footer .container .fa-google-plus::before {
+  content: "\f0d5";
+}
+div.wrap > footer .wrapper-footer .container .wrapper-time {
+  margin-bottom: 50px;
+}
+div.wrap > footer .wrapper-footer .container .title-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+div.wrap > footer .wrapper-footer .container .main-time {
+  position: relative;
+  margin-bottom: 10px;
+}
+div.wrap > footer .wrapper-footer .container .main-time::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 0;
+  bottom: 5px;
+  width: 40%;
+  height: 1px;
+  border: 1px dashed #c5c5c5;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.wrap > footer .wrapper-footer .container .section-footer-main-text {
+  margin-bottom: 80px;
+}
+div.wrap > footer .wrapper-footer .container .span-right {
+  float: right;
+}
+div.wrap > footer .wrapper-footer .container .wrapper-form-email {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+div.wrap > footer .wrapper-footer .container .input-email {
+  height: 40px;
+  line-height: 40px;
+  color: #757575;
+  padding: 20px;
+  width: 70%;
+  float: left;
+  border: 1px solid #b7b7b7;
+  border-right: 0;
+}
+div.wrap > footer .wrapper-footer .container .wrapper-input-email-submit {
+  width: 30%;
+  float: left;
+  height: 42px;
+  position: relative;
+}
+div.wrap > footer .wrapper-footer .container .input-email-submit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 5;
+  background-color: #125f06;
+}
+div.wrap > footer .wrapper-footer .container .links {
+  display: block;
+  color: #474747;
+  margin-bottom: 10px;
+}
+div.wrap > footer .wrapper-footer-bottom {
+  background-color: #125f06;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+}
+div.wrap > #back-top .link {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  border: 2px solid #125f06;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  z-index: 100;
+  color: #125f06;
+  transition: all 0.4s ease;
+  display: none;
+}
+div.wrap > #back-top .link::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #125f06;
+  border-radius: 50%;
+  opacity: 0;
+}
+div.wrap > #back-top .link .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+div.wrap > #back-top .link .fa-angle-double-up::before {
+  content: "\f102";
+}
+div.wrap > #back-top .link:hover {
+  bottom: 80px;
+  background-color: #125f06;
+}
+div.wrap > #back-top .link:hover .fa-angle-double-up::before {
+  color: #fff;
+}
+div.wrap > #back-top .link:hover::before {
+  opacity: 0.5;
+}
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  div.wrap > nav > .container {
+    width: 100%;
+  }
+  div.wrap > nav > .container > .logo {
+    line-height: 75px;
+    display: inline-block;
+    float: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 993px) {
+  div.wrap > nav > .container {
+    width: 100%;
+  }
+  div.wrap > nav > .container > .menu-moblie > .icons-hamburger {
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  div.wrap > nav > .container > .logo {
+    line-height: 75px;
+    display: inline-block;
+    float: left;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption {
+    margin: 150px auto;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h2 {
+    font-size: 3em;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h3 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  div.wrap > nav > .container {
+    width: 100%;
+    text-align: center;
+  }
+  div.wrap > nav > .container > .menu-moblie > .icons-hamburger {
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+  div.wrap > nav > .container > .logo {
+    line-height: 75px;
+    display: inline-block;
+    float: left;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption {
+    margin: 100px auto;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h2 {
+    font-size: 2em;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h3 {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 404px) and (max-width: 479px) {
+  div.wrap > nav > .container {
+    width: 100%;
+    text-align: center;
+  }
+  div.wrap > nav > .container > .menu-moblie > .icons-hamburger {
+    float: right;
+  }
+  div.wrap > nav > .container > .logo {
+    line-height: 75px;
+    display: inline-block;
+    float: left;
+  }
+  div.wrap > .main-content > .weekend > .container .section-weekend .title-small-weekend {
+    font-size: 16px;
+    color: #1d1d1d;
+    margin-bottom: 10px;
+  }
+  div.wrap > .main-content > .weekend > .container .section-weekend .title-weekend {
+    font-size: 18px;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption {
+    margin: 50px auto;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h2 {
+    font-size: 1em;
+  }
+  div.wrap > .main-content > .slider-banner > .carousel .carousel-caption h3 {
+    font-size: 0.5em;
+  }
+}
