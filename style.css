@@ -643,6 +643,10 @@ div.wrap > #back-top .link:hover::before {
     display: inline-block;
     float: left;
   }
+
+  div.wrap > .main-content > .weekend > .container .section-weekend{
+     padding: 30px 20px 50px;
+  }
   div.wrap > .main-content > .weekend > .container .section-weekend .title-small-weekend {
     font-size: 16px;
     color: #1d1d1d;
